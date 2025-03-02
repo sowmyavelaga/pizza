@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #d4a41c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .image-section {
+            background: url("download.jpeg") no-repeat center;
+            background-size: cover;
+            width: 300px;
+            height: 400px;
+            position: relative;
+        }
+        .image-section .overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .form-section {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .a{
+            background-color: #e50000;
+            color: white;
+            padding: 5px;
+            margin-block: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 90px;
+        }
+        button:hover {
+            background-color: #c40000;
+        }
+        #drag-container{
+            position: relative;
+            height: 100%;
+        }
+        .draggable{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="overlay">
+                <h3>Need some Pizza, yo?</h3>
+                <p>C’mon and order from nearby Pizza delivery and pickup restaurants</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+            <a href="main menu.html" > sign in</a>
+        </div>
+    </div>
+</body>
+</html>

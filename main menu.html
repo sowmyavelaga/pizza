@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+            
+        }
+        .menu-container {
+            background: palevioletred;
+            padding: 20px;
+            max-width: 1000px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-header {
+            text-align: center;
+        }
+        .menu-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .menu-header p {
+            font-size: 15px;
+            color: gray;
+        }
+        .menu-section {
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .menu-item .info {
+            flex-grow: 1;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: gray;
+        }
+        .menu-item .price {
+            font-weight: bold;
+        }
+        .search-container {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+#drag-container{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+            position: relative;
+            height: 100%;
+        }
+        .draggable{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="drag-container">
+        <div id="drag-bar" class="draggable">
+            <input type="text" id="search-input" placeholder="search...">
+            <button id="search-btn">Search</button>
+    </div>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>PIZZA MENU</h1>
+            <p>Best Pizza in the City</p>
+        </div>
+        <div class="menu-section">
+            <h2>Special Pizza</h2>
+            <div class="menu-item">
+                <img src="pizza.jpeg" alt="Pepperoni Pizza">
+                <div class="info">
+                    <h3>Pepperoni - Hot</h3>
+                    <p>Delicious spicy pepperoni with extra cheese.</p>
+                </div>
+                <div class="price">$12</div>
+            </div>
+            <div class="menu-item">
+                <img src=".jpg" alt="burger Carbonara">
+                <div class="info">
+                    <h3>Pizza Carbonara</h3>
+                    <p>Creamy white sauce with crispy bacon.</p>
+                </div>
+                <div class="price">$14</div>
+            </div>
+            <div class="menu-item">
+                <img src="pizza3.jpg" alt="Chicken & Arugula">
+                <div class="info">
+                    <h3>Chicken & Arugula</h3>
+                    <p>Grilled chicken with fresh arugula topping.</p>
+                </div>
+                <div class="price">$15</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

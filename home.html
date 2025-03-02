@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdece3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 50px;
+            text-align: left;
+            margin-left: 50px;
+        }
+        .navv{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+           
+            width: 500px;
+        }
+        .navv{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            max-width: 400px;
+            text-align: left;
+        }
+        .explore-btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .popular-dishes {
+            margin-top: 30px;
+        }
+        .dishes-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .dish {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-shadow: #ff5722;
+        }
+        .dish img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 28px;
+            text-align: left;
+            margin-left: 50px;
+        }
+        h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .dish p {
+            font-size: 14px;
+            color: #777;
+        }
+        .side-image {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            width: 300px;
+        }
+        .floating-text {
+            position: absolute;
+            top: 350px;
+            right: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff6600;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navv">
+        
+            <a  href="menu.html">Home</a>
+            <a href="login.html">Login</a>
+            <a>Menu</a>
+            <a href ="aboutus.html">About us</a>
+    
+    </nav>
+    <header>
+        <h1>Order Your Best Food Anytime</h1>
+        <p>Hey, Our delicious food is waiting for you,<br>We are always near to you with fresh items of food</p>
+        <button class="explore-btn">Explore Food</button>
+    </header>
+    <img class="side-image" src="chicky.jpeg" alt="Chicken">
+    <div class="floating-text">Food<br>Restaurant<br>Website</div>
+    <section class="popular-dishes">
+        <h2>Popular Dishes</h2>
+        <div class="dishes-container">
+            <div class="dish">
+                <img src="https://www.allrecipes.com/thmb/5JVfA7MxfTUPfRerQMdF-nGKsLY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/25473-the-perfect-basic-burger-DDMFS-4x3-56eaba3833fd4a26a82755bcd0be0c54.jpg" alt="Beef Burger">
+                <h3>Beef Burger</h3>
+                <p>Delicious juicy burger with fresh ingredients.</p>
+            </div>
+            <div class="dish">
+                <img src="french fries.jpeg"; alt="french">
+                <h3>French Fries</h3>
+                <p>Crispy and golden fries with special seasoning.</p>
+            </div>
+            <div class="dish">
+                <img src="pizza.jpeg" alt="pizza">
+                <h3>pizza</h3>
+                <p>Perfectly cooked chicken with great taste.</p>
+            </div>
+            <div class="dish">
+                <img src="sandwich.jpeg" alt="Fried Chicken">
+                <h3>sandwich</h3>
+                <p>Crunchy and spicy fried chicken served hot.</p>
+            </div>  
+        </div>
+    </section>
+</body>
+</html>
+
